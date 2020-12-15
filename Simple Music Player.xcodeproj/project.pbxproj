@@ -11,6 +11,10 @@
 		4E4A67502588DEA700F8C318 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A674F2588DEA700F8C318 /* ContentView.swift */; };
 		4E4A67522588DEA900F8C318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4A67512588DEA900F8C318 /* Assets.xcassets */; };
 		4E4A67552588DEA900F8C318 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4A67542588DEA900F8C318 /* Preview Assets.xcassets */; };
+		4E4A67602588DEB700F8C318 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A675F2588DEB700F8C318 /* Home.swift */; };
+		4E4A67662588DEED00F8C318 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A67652588DEED00F8C318 /* HomeViewModel.swift */; };
+		4E4A67692588DEF100F8C318 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A67682588DEF100F8C318 /* Album.swift */; };
+		4E4A676C2588DEFE00F8C318 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E4A676B2588DEFE00F8C318 /* audio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		4E4A67512588DEA900F8C318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E4A67542588DEA900F8C318 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E4A67562588DEA900F8C318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E4A675F2588DEB700F8C318 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4E4A67652588DEED00F8C318 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4E4A67682588DEF100F8C318 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		4E4A676B2588DEFE00F8C318 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,12 @@
 		4E4A674C2588DEA700F8C318 /* Simple Music Player */ = {
 			isa = PBXGroup;
 			children = (
+				4E4A676B2588DEFE00F8C318 /* audio.mp3 */,
 				4E4A674D2588DEA700F8C318 /* Simple_Music_PlayerApp.swift */,
-				4E4A674F2588DEA700F8C318 /* ContentView.swift */,
+				4E4A67642588DEDB00F8C318 /* viewmodel */,
+				4E4A67632588DECE00F8C318 /* model */,
+				4E4A67622588DEC700F8C318 /* view */,
+				4E4A675D2588DEAD00F8C318 /* scenes */,
 				4E4A67512588DEA900F8C318 /* Assets.xcassets */,
 				4E4A67562588DEA900F8C318 /* Info.plist */,
 				4E4A67532588DEA900F8C318 /* Preview Content */,
@@ -67,6 +79,38 @@
 				4E4A67542588DEA900F8C318 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E4A675D2588DEAD00F8C318 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A674F2588DEA700F8C318 /* ContentView.swift */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		4E4A67622588DEC700F8C318 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A675F2588DEB700F8C318 /* Home.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		4E4A67632588DECE00F8C318 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A67682588DEF100F8C318 /* Album.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4E4A67642588DEDB00F8C318 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				4E4A67652588DEED00F8C318 /* HomeViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4A67552588DEA900F8C318 /* Preview Assets.xcassets in Resources */,
+				4E4A676C2588DEFE00F8C318 /* audio.mp3 in Resources */,
 				4E4A67522588DEA900F8C318 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4A67502588DEA700F8C318 /* ContentView.swift in Sources */,
+				4E4A67602588DEB700F8C318 /* Home.swift in Sources */,
 				4E4A674E2588DEA700F8C318 /* Simple_Music_PlayerApp.swift in Sources */,
+				4E4A67662588DEED00F8C318 /* HomeViewModel.swift in Sources */,
+				4E4A67692588DEF100F8C318 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
